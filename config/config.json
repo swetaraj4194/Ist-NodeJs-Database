@@ -1,7 +1,6 @@
 {
   "development": {
     "url": "postgres://xdmsmhnc:VnG7zrZQKo2-Vrrv9wbQNwWGcyT3nWfL@balarama.db.elephantsql.com/xdmsmhnc",
-   
     "dialect": "postgres"
   },
   "test": {
