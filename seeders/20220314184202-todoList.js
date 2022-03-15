@@ -7,11 +7,13 @@ module.exports = {
       [
         {
           name: "Nirav",
+          userId:1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
           name: "sweta",
+          userId:2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -21,6 +23,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete("todolists", null, {});
+    await queryInterface.bulkDelete("todoLists", null, {});
   },
 };
