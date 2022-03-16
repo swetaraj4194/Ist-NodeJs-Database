@@ -1,6 +1,8 @@
 //1st method
 
 const User = require("./models").user;
+const TodoList = require("./models").todoList;
+const TodoItem = require("./models").todoItem;
 
 async function getAllUsers() {
   try {
@@ -57,7 +59,7 @@ const createNewUser = async (name, email, password) => {
 
 
 
-const TodoItem = require("./models").todoItem;
+
 
 async function createSampleTodoItems() {
   try {
@@ -79,6 +81,4 @@ async function createSampleTodoItems() {
     console.error(e);
   }
 }
-
-//createSampleTodoItems().then((todos) => console.log(todos));
 

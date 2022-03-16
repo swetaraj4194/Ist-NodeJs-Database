@@ -19,7 +19,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: {
           model: "todoLists",
-          ket: "id",
+          key: "id",
         },
         onUpdate: "CASCADE",
         onDelete: "SET NULL",
