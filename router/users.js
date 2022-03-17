@@ -4,6 +4,16 @@ const TodoList = require("../models").todoList;
 
 const router = new Router();
 
+
+// //conditional mw
+
+// const idValidation=(req,res,next)=>{
+//     if(!Number.isInteger(parseInt(req.params.id))){
+//     res.status(400).json({message:"enter a valid id"})
+// } else{
+//     next()
+// }
+
 //send a list of users
 router.get("/", async (request, response, next) => {
   try {
